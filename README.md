@@ -2,25 +2,31 @@
 
 ## Problem Statement
 
-A key question for many financial institutions is whether an individual or entity will default on a loan. This key question can have wide implications, not just for a single institution, but also for economies as a whole.
+A key question for many financial institutions is whether an individual or entity will default on a loan. This important question can have wide implications, not just for a single institution, but also for economies as a whole.
 
-This project will look at predicting the probability of default using machine learning methods. 
+This project will look at predicting default using machine learning methods. 
 
 ## The Project Structure
 
-```mermaid
+Root Directory
 
-flowchart TD
-    A["A"] --- T1( )
-    T1---B[B] 
-    T1---C[C]
-    T1---D[D]
+- README.md: This document
+- credit_card_default.ipynb: Ipython notebook containing the analysis
+- environment.yml: conda environment file to build the environment for this project
+- /data: directory of all related data
+- /assets: directory of all related assets for report generation
 
-%%{init: {"flowchart": {"curve": "stepAfter" }} }%%
+## Setting up the environment
+
+You must have conda or similar package manager installed
+
+```sh
+conda env create -f environment.yml
 ```
 
-## The Data Source
+## Running the report
 
+## The Data Source
 
 Kaggle Source:
 

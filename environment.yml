@@ -1,0 +1,12 @@
+name: cc_default
+channels:
+  - conda-forge
+dependencies:
+  #############################################
+  # System & Environment
+  #############################################
+  - pandas
+  - seaborn
+  - scikit-learn
+  - imbalanced-learn
+  - ipykernel
