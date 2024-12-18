@@ -5,8 +5,8 @@ dependencies:
   #############################################
   # System & Environment
   #############################################
-  - pandas
-  - seaborn
-  - scikit-learn
-  - imbalanced-learn
-  - ipykernel
+  - pandas=2.2
+  - seaborn=0.13
+  - scikit-learn=1.6
+  - imbalanced-learn=0.12
+  - ipykernel=6.29
