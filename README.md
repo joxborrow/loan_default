@@ -14,6 +14,7 @@ Root Directory
 - credit_card_default.ipynb: Ipython notebook containing the analysis
 - environment.yml: conda environment file to build the environment for this project
 - /data: directory of all related data
+- /models: directory of serialized pickel files containing classifiers, pipelines, etc.
 - /assets: directory of all related assets for report generation
 
 ## Setting up the environment
