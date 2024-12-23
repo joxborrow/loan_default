@@ -33,7 +33,10 @@ of default rates. Note that the default rate of the overall data is approximatel
 Note that the data has been anonymized by the original author, so any Personal 
 Identifiable Information has been eliminated.
 
-**Insert Graphic Here!!!**
+<div align="center">
+  <img src="assets/correlation_plot.png">
+</div>
+
 
 ## Data Preprocessing/Preparation
 
