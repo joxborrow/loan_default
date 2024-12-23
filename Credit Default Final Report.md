@@ -98,3 +98,9 @@ the different model.
 
 ## Areas for Further Exploration
 
+<style>
+img {
+  float: center;
+}
+</style>
+
