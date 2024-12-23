@@ -11,7 +11,10 @@ This project will look at predicting default using machine learning methods.
 Root Directory
 
 - README.md: This document
-- credit_card_default.ipynb: Ipython notebook containing the analysis
+- credit_card_tech_report.ipynb: Ipython notebook containing the technical analysis and modeling.
+  Represents the technical report
+- Credit Default Final Report.md: The final business report of results for the the credit default
+  prediction modeling.
 - environment.yml: conda environment file to build the environment for this project
 - /data: directory of all related data
 - /models: directory of serialized pickel files containing classifiers, pipelines, etc.

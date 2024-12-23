@@ -10,3 +10,6 @@ dependencies:
   - scikit-learn=1.6
   - imbalanced-learn=0.12
   - ipykernel=6.29
+  - pip
+  - pip:
+    - great_tables[extra]
