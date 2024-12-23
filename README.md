@@ -20,6 +20,12 @@ Root Directory
 - /models: directory of serialized pickel files containing classifiers, pipelines, etc.
 - /assets: directory of all related assets for report generation
 
+```mermaid
+flowchart LR
+  root["fa:fa-folder Root"]
+
+```
+
 ## Setting up the environment
 
 You must have conda or similar package manager installed
