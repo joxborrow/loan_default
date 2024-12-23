@@ -92,15 +92,11 @@ graphic.
 The following table takes a look at some of the key performance metrics across
 the different model.
 
-![image](assets/performance_metrics_table.png)
+<div align="center">
+  <img src="assets/performance_metrics_table.png">
+</div>
 
 ## Results & Findings
 
 ## Areas for Further Exploration
-
-<style>
-img {
-  float: center;
-}
-</style>
 
