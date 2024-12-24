@@ -8,7 +8,16 @@ This project will look at predicting default using machine learning methods.
 
 ## The Project Structure
 
-Root Directory
+```
+Root┐
+    ├ README.md
+    ├ credit_card_tech_report.ipynb
+    ├ Credit Default Final Report.md
+    ├ environment.yml
+    ├ /data
+    ├ /models
+    └ /assets
+```
 
 - README.md: This document
 - credit_card_tech_report.ipynb: Ipython notebook containing the technical analysis and modeling.
@@ -20,24 +29,20 @@ Root Directory
 - /models: directory of serialized pickel files containing classifiers, pipelines, etc.
 - /assets: directory of all related assets for report generation
 
-```mermaid
-flowchart LR
-  root["fa:fa-folder Root"]
 
-```
 
 ## Setting up the environment
 
-You must have conda or similar package manager installed
+You must have conda or similar package manager installed. Running the notebook 
+also requires that you have chrome installed on your system. The environment
+can be setup using the following command executed from where you have cloned
+this directory.
 
 ```sh
 conda env create -f environment.yml
 ```
-
-## Running the report
-
 ## The Data Source
 
-Kaggle Source:
+This project uses data from Kaggle[^1]
 
-[credit default only numbers](https://www.kaggle.com/datasets/hugoferquiroz/credit-default-only-numbers)
+[^1][credit default only numbers](https://www.kaggle.com/datasets/hugoferquiroz/credit-default-only-numbers)
