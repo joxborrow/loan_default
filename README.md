@@ -29,8 +29,6 @@ Root┐
 - /models: directory of serialized pickel files containing classifiers, pipelines, etc.
 - /assets: directory of all related assets for report generation
 
-
-
 ## Setting up the environment
 
 You must have conda or similar package manager installed. Running the notebook 
@@ -43,6 +41,4 @@ conda env create -f environment.yml
 ```
 ## The Data Source
 
-This project uses data from Kaggle[^1]
-
-[^1][credit default only numbers](https://www.kaggle.com/datasets/hugoferquiroz/credit-default-only-numbers)
+***Quiroz, H. F. (2024). credit default only numeric data. Kaggle.com. https://www.kaggle.com/datasets/hugoferquiroz/credit-default-only-numbers**

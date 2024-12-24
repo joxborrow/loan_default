@@ -37,6 +37,9 @@ Identifiable Information has been eliminated.
   <img src="assets/correlation_plot.png">
 </div>
 
+The correlation plot shows mixed results. This could be indicatative of no relationship, however it could also suggest that the relationships are non-linear
+in nature.
+
 
 ## Data Preprocessing/Preparation
 
@@ -70,7 +73,7 @@ Four different models were evaluated for this project. Details are given below.
    a balanced dataset. Polyno ial features were generated. All features were then
    standardized for better convergence. As the resampled/balance dataset had many
    samples, in the 100,000's, stochastic gradient desecent was used for computational
-   efficiency.
+   efficiency. Sequential feature selection was then performed.
 3) **Decision Tree** - A decision tree was generated. The final decision tree
    was the result of a grid search over the following hyper parameters:
 
@@ -101,5 +104,41 @@ the different model.
 
 ## Results & Findings
 
+After fitting all models, there was very little evidence of overfitting in any
+of the cases. Training and Test permformance metrics were very similar across the
+different models.
+
+Performance across the different models was very close, excluding the baseline
+model. Particular attention should be paid to the recall for Class 1, default,
+across the model. Recall is a particularly important metric as it is likely more
+costly to bear the explict cost of default, which would show on a balance sheet.
+
+While marking people as a default risk, and perhaps denying them a loan, is an opportunity cost, it would not show directly on a balance state. Though depending
+on a companies desire for revenue growth this could become important.
+
+Interestingly, the recall for Class 1 was the same across all models, except the
+baseline. The absolute level of recall, at 0.797, is a strong number.
+
+The largest area of differentiation across the models was the precision metric
+for Class 1, with the Logistic Regression w/ Stochastic Gradient Decent performing
+the best.
+
+The conclusion of this project is that a strong model can be used to predict
+default of individuals. Under the assumption of great costs associated with failure
+to predict defaults (false positives), we come to the conclusion that the Logistic
+Regression w/ SGD is the prefered model of those we looked at.
+
 ## Areas for Further Exploration
+
+There are other areas that could further improve model performance. These
+improvements would like fall into one of the following categories:
+
+- More sophisticated models: Try additonal modeling techinques (Support Vector
+  Machines, etc.)
+- Additional Feature Engineering: Examine other transformations (Box Cox for
+  for normality, or perhaps binning certain features)
+
+## Sources
+
+***Quiroz, H. F. (2024). credit default only numeric data. Kaggle.com. https://www.kaggle.com/datasets/hugoferquiroz/credit-default-only-numbers**
 
