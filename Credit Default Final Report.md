@@ -28,7 +28,7 @@ as original column names were in Portugues.
 
 These columns represent a number of financial indicators that could be drivers
 of default rates. Note that the default rate of the overall data is approximately
-6.7%. Consequently, this represents and unbalanced classificaton.
+6.7%. Consequently, this represents an unbalanced classificaton.
 
 Note that the data has been anonymized by the original author, so any Personal 
 Identifiable Information has been eliminated.
@@ -47,15 +47,15 @@ There were a number of data preproccessing steps that were undertaken.
 
 1) **Treat Missing Values** - Two columns, mthly_inc_amount, and num_dependents had
    20.3% and 2.5% missing values respectively. In order to perserve these columns
-   in the modeling, K-Nearest Neighbors was used to impute values
+   in the modeling, K-Nearest Neighbors was used to impute values.
 2) **Duplicate Values** - After exploratory analysis, no duplicate values were found.
 3) **Outliers** - Outliers were found to be a problem across many variables. We used
-   the Isolation Forest Algorith (based on Random Forest) to flag and eliminate
+   the Isolation Forest Algorithm (based on Random Forest) to flag and eliminate
    outliers.
 4) **Training/Test Splits** - The training/split was executed using the scikit
    defaults, which are 75% and 25% for train and test sets respectively.
 5) **Sampling** - The classification problem was found to be imbalanced. Consequently,
-   we used the SMOTE algorithm, round in the imblearn module, to create balanced
+   we used the SMOTE algorithm, found in the imblearn module, to create balanced
    versions of the training datasets.
 6) **Feature Engineering** - For the Stochastic Gradienct Descent Logistic Regression 
    model, polynomial features were generated. 
@@ -70,7 +70,7 @@ Four different models were evaluated for this project. Details are given below.
    (no default). This model is the baseline against which other models are judged.
    This model had no sampling or feature engineering.
 2) **Logistic Regression using Stochastic Gradeint Descent** - This model required
-   a balanced dataset. Polyno ial features were generated. All features were then
+   a balanced dataset. Polynomial features were generated. All features were then
    standardized for better convergence. As the resampled/balance dataset had many
    samples, in the 100,000's, stochastic gradient desecent was used for computational
    efficiency. Sequential feature selection was then performed.
@@ -83,7 +83,7 @@ Four different models were evaluated for this project. Details are given below.
    - Criterian (gini or entropy)
 
    The decision tree was generate against the balanced data set.
-4) **Random Forest** - A random forest model was generated. The algorith was
+4) **Random Forest** - A random forest model was generated. The algorithm was
    passed the optimized parameters from the single descision tree model previously
    run. This model was also run against the balanced datasets.
 
@@ -96,7 +96,7 @@ graphic.
 ![image](assets/models_cm.png)
 
 The following table takes a look at some of the key performance metrics across
-the different model.
+the different models.
 
 <div align="center">
   <img src="assets/performance_metrics_table.png">
@@ -104,29 +104,29 @@ the different model.
 
 ## Results & Findings
 
-After fitting all models, there was very little evidence of overfitting in any
-of the cases. Training and Test permformance metrics were very similar across the
-different models.
+After fitting all models, there was very little evidence of overfitting. Training 
+and Test permformance metrics were very similar across the different models.
 
 Performance across the different models was very close, excluding the baseline
 model. Particular attention should be paid to the recall for Class 1, default,
 across the model. Recall is a particularly important metric as it is likely more
 costly to bear the explict cost of default, which would show on a balance sheet.
 
-While marking people as a default risk, and perhaps denying them a loan, is an opportunity cost, it would not show directly on a balance state. Though depending
-on a companies desire for revenue growth this could become important.
+While marking people as a default risk, and perhaps denying them a loan, has an opportunity cost of lost revenue, it would not show directly on a balance state.
+Though depending on a companies desire for revenue growth this could become important.
 
-Interestingly, the recall for Class 1 was the same across all models, except the
-baseline. The absolute level of recall, at 0.797, is a strong number.
+Interestingly, the recall for Class 1 was approximately the same across all models, 
+except the baseline. The absolute level of recall ranged between 0.808 to 0.811.
+The decision tree edged out other methods.
 
 The largest area of differentiation across the models was the precision metric
 for Class 1, with the Logistic Regression w/ Stochastic Gradient Decent performing
 the best.
 
 The conclusion of this project is that a strong model can be used to predict
-default of individuals. Under the assumption of great costs associated with failure
-to predict defaults (false positives), we come to the conclusion that the Logistic
-Regression w/ SGD is the prefered model of those we looked at.
+default of individuals. Under the assumption of greater costs associated with failure
+to predict defaults (false positives), we come to the conclusion that the Decision Tree is the best model. However, Logistic Regression with SGD also performed well
+with the strongest Class 1 precision.
 
 ## Areas for Further Exploration
 
@@ -135,6 +135,7 @@ improvements would like fall into one of the following categories:
 
 - More sophisticated models: Try additonal modeling techinques (Support Vector
   Machines, etc.)
+- Futher tuning on the Random Forest may yeild better results.
 - Additional Feature Engineering: Examine other transformations (Box Cox for
   for normality, or perhaps binning certain features)
 
