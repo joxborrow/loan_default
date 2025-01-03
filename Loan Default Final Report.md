@@ -18,7 +18,7 @@ model for our purposes.
 
 ## Data Aquisition
 
-This analysis is based on a dataset from [Kaggle](www.kaggle.com). It is titled
+This analysis is based on a dataset from Kaggle[[1]](#1). It is titled
 'credit default only numeric data', and is provided by Hugo Fernandez Quiroz. The
 columns of the raw dataset are detailed below. Note that columns have been renamed,
 as original column names were in Portugues.
@@ -30,7 +30,7 @@ These columns represent a number of financial indicators that could be drivers
 of default rates. Note that the default rate of the overall data is approximately
 6.7%. Consequently, this represents an unbalanced classificaton.
 
-Note that the data has been anonymized by the original author, so any Personal 
+The data has been anonymized by the original author, so any Personal 
 Identifiable Information has been eliminated.
 
 <div align="center">
@@ -54,38 +54,37 @@ There were a number of data preproccessing steps that were undertaken.
    outliers.
 4) **Training/Test Splits** - The training/split was executed using the scikit
    defaults, which are 75% and 25% for train and test sets respectively.
-5) **Sampling** - The classification problem was found to be imbalanced. Consequently,
-   we used the SMOTE algorithm, found in the imblearn module, to create balanced
-   versions of the training datasets.
-6) **Feature Engineering** - For the Stochastic Gradienct Descent Logistic Regression 
-   model, polynomial features were generated. 
+5) **Sampling** - The classification problem was found to be imbalanced.  
+   Consequently, we used the BorderlineSMOTE algorithm, found in the imblearn module, to create balanced versions of the training datasets.
+6) **Feature Engineering** - For the Stochastic Gradienct Descent Logistic 
+   Regression model, polynomial features were generated. 
 6) **Encoding** - For certain models (ie. Logistic Regression) a standard scaling was
    used on all features. This aided in the convergence of the algorithm. 
 
 ## Modeling
 
-Four different models were evaluated for this project. Details are given below.
+Four different models were evaluated for this investigation. Details are given below.
 
 1) **Baseline (Dummy) Classifer** - This was a model that always predicted the 
    majority class (no default). This model is the baseline against which other models
-   are judged. This model had no sampling or feature engineering.
-2) **Logistic Regression using Stochastic Gradeint Descent** - This model required
-   a balanced dataset. Polynomial features were generated. All features were then
-   standardized for better convergence. As the resampled/balance dataset had many
-   samples, in the 100,000's, stochastic gradient desecent was used for computational
-   efficiency. Sequential feature selection was then performed.
-3) **Decision Tree** - A decision tree was generated. The final decision tree
-   was the result of a grid search over the following hyper parameters:
+   are judged. This baseline model had no sampling or feature engineering.
+2) **Logistic Classification using Stochastic Gradeint Descent** - Polynomial features 
+   were generated. All features were then standardized for better convergence. Stochastic gradient desecent was used for computational efficiency. Sequential feature selection was then performed. Stochastic gradient descent was then used
+   to fit the Logistic Classification
+3) **Decision Tree** - A decision tree was generated using grid search over
+   hyperparameters. The final decision tree was the result of a grid search over 
+   the following hyper parameters:
 
    - Minimum Impurity Decrease (range from .001 to .05)
    - Max Tree Depth (2, 5, or 10)
    - Minimum Samples Split (0.1, 0.2, 0.5)
    - Criterian (gini or entropy)
 
-   The decision tree was generated against the balanced data set.
-4) **Random Forest** - A random forest model was generated. The algorithm was
-   passed the optimized parameters from the single descision tree model previously
-   run. This model was also run against the balanced datasets.
+4) **Random Forest** - A random forest model was generated. The algorithm used 
+   the default settings.
+
+All but the baseline model were also run against the unsampled dataset and a dataset
+sampled using the borderline Synthetic Minority Over-Sampling Technique (SMOTE)[[2]](#2), implemented in imblearn library[[3]](#3). This particular version of SMOTE focuses on generating more observations in the area of overlap between classes.
 
 ## Model Evalution
 
@@ -142,5 +141,12 @@ improvements would like fall into one of the following categories:
 
 ## Sources
 
-***Quiroz, H. F. (2024). credit default only numeric data. Kaggle.com. https://www.kaggle.com/datasets/hugoferquiroz/credit-default-only-numbers**
+<a id="1">[1]</a> ***Quiroz, H. F. (2024). credit default only numeric data. Kaggle.com. https://www.kaggle.com/datasets/hugoferquiroz/credit-default-only-numbers**
+
+<a id="2">[2]</a> ***H. Han, W. Wen-Yuan, M. Bing-Huan, “Borderline-SMOTE: a new over-sampling method in imbalanced data sets learning,” Advances in intelligent computing, 878-887, 2005.***
+
+<a id="3">[3]</a> ***BorderlineSMOTE — Version 0.14.dev0. (2024). Imbalanced-Learn.org. https://imbalanced-learn.org/dev/references/generated/imblearn.over_sampling.BorderlineSMOTE.html***
+
+
+‌
 
