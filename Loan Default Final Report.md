@@ -103,30 +103,34 @@ the different models.
 
 ## Results & Findings
 
-After fitting all models, there was very little evidence of overfitting. Training 
-and Test permformance metrics were very similar across the different models.
+After fitting all models, there was very little evidence of overfitting, looking at
+the accuracy measures. Some deviation between the training and testing sets was
+evident in the precision and recall of the sampled models. Test permformance metrics 
+were very similar across the different models.
 
-Performance across the different models was very close, excluding the baseline
-model. Particular attention should be paid to the recall for Class 1, default,
+Particular attention should be paid to the recall for Class 1, default,
 across the models. Recall is a particularly important metric as it is likely more
 costly to bear the explict cost of default, which would show on a company balance
 sheet.
 
-While marking people as a default risk, and perhaps denying them a loan, has an opportunity cost of lost revenue, it would not show directly on a balance sheet.
+While marking people as a default risk, and perhaps denying them a loan, has an opportunity 
+cost of lost revenue, it would not show directly on a balance sheet.
 Though depending on a companies desire for revenue growth, this could become important.
 
-Interestingly, the recall for Class 1 was approximately the same across all models, 
-except the baseline. The absolute level of recall ranged between 0.808 to 0.811.
-The decision tree edged out other methods.
-
-The largest area of differentiation across the models was the precision metric
-for Class 1, with the Logistic Regression w/ Stochastic Gradient Decent performing
-the best.
+The recall varied quite a bit for the non sampled models. Results for recall on class
+1 was more consistent with the sampled models, but still slight variation was seen.
+The sampled random forest did the best on the test set class 1 recall metric, with
+a reading of 0.822. This would likely be the best recommendation if emphasis is to
+avoid miss labeling those that would default. Note that the increased recall for
+this model came at a price of decreased precision. If an leadership team wanted to strike
+a better balance for thes metrics, the Logistic Classification with Sampling might
+be a good choice.
 
 The conclusion of this project is that a strong model can be built to predict
 default of individuals. Under the assumption of greater costs associated with failure
-to predict defaults (false positives), we come to the conclusion that the Decision Tree is the best model. However, Logistic Regression with SGD also performed well
-with the strongest Class 1 precision.
+to predict defaults (false negatives), we come to the conclusion that the Random forest
+with sampling is the best model. However, Logistic Regression with SGD and sampling also
+performed well.
 
 ## Areas for Further Exploration
 
