@@ -1,8 +1,9 @@
-# Capstone Project - Loan Default Final Report
+# Capstone Project - Loan Default
 
 ## Table of Contents
 
-- [Capstone Project - Loan Default Final Report](#capstone-project---loan-default-final-report)
+[Table of Contents](#table-of-contents)
+- [Capstone Project - Loan Default](#capstone-project---loan-default)
   - [Table of Contents](#table-of-contents)
   - [Problem Statement](#problem-statement)
   - [Model Outcomes or Predictions](#model-outcomes-or-predictions)
@@ -17,7 +18,7 @@
     - [Setting up the environment](#setting-up-the-environment)
     - [Sources](#sources)
 
-## Problem Statement
+## Problem Statement 
 
 A key question for many financial institutions is whether an individual or entity
 will default on a loan. This important question can have wide implications, not
@@ -27,21 +28,22 @@ the livelihoods of the employees as well.
 
 This project will look at predicting the probability of default using machine
 learning methods like Logistic Regression, Decision Trees, Random Forests and
-XGBoost.
+XGBoost. [(toc)](#table-of-contents)
 
 ## Model Outcomes or Predictions
 
 This is a supervised learning model, binary classification to be more precise. The
 output of this project will be several models that yield a prediction of default
 (1 = Default, 0 = No default). Scoring techniques will be used to choose the best
-model for our purposes.
+model for our purposes. [(toc)](#table-of-contents)
+
 
 ## Data Acquisition
 
 This analysis is based on a dataset from Kaggle[[1]](#1). It is titled
 'credit default only numeric data', and is provided by Hugo Fernandez Quiroz. The
 columns of the raw dataset are detailed below. Note that columns have been renamed,
-as original column names were in Portuguese.
+as original column names were in Portuguese. [(toc)](#table-of-contents)
 
 ![Data Dictionary](assets/data_dictionary.png)
 
@@ -79,7 +81,7 @@ There were a number of data preprocessing steps that were undertaken.
 6) **Feature Engineering** - For the Stochastic Gradient Descent Logistic
    Regression model, polynomial features were generated.
 7) **Encoding** - For certain models (ie. Logistic Regression) a standard scaling was
-   used on all features. This aided in the convergence of the algorithm.
+   used on all features. This aided in the convergence of the algorithm. [(toc)](#table-of-contents)
 
 ## Modeling
 
@@ -104,7 +106,7 @@ Four different models were evaluated for this investigation. Details are given b
    the default settings.
 
 All but the baseline model were also run against the unsampled dataset and a dataset
-sampled using the borderline Synthetic Minority Over-Sampling Technique (SMOTE)[[2]](#2), implemented in imblearn library[[3]](#3). This particular version of SMOTE focuses on generating more observations in the area of overlap between classes.
+sampled using the borderline Synthetic Minority Over-Sampling Technique (SMOTE)[[2]](#2), implemented in imblearn library[[3]](#3). This particular version of SMOTE focuses on generating more observations in the area of overlap between classes. [(toc)](#table-of-contents)
 
 ## Model Evaluation
 
@@ -115,7 +117,7 @@ graphic.
 ![image](assets/models_cm.png)
 
 The following table takes a look at some of the key performance metrics across
-the different models.
+the different models. [(toc)](#table-of-contents)
 
 <div align="center">
   <img src="assets/performance_metrics_table.png">
@@ -150,7 +152,7 @@ The conclusion of this project is that a strong model can be built to predict
 default of individuals. Under the assumption of greater costs associated with failure
 to predict defaults (false negatives), we come to the conclusion that the Random forest
 with sampling is the best model. However, Logistic Regression with SGD and sampling also
-performed well.
+performed well. [(toc)](#table-of-contents)
 
 ## Supporting Material
 
@@ -206,3 +208,5 @@ conda env create -f environment.yml
 <a id="2">[2]</a> ***H. Han, W. Wen-Yuan, M. Bing-Huan, “Borderline-SMOTE: a new over-sampling method in imbalanced data sets learning,” Advances in intelligent computing, 878-887, 2005.***
 
 <a id="3">[3]</a> ***BorderlineSMOTE — Version 0.14.dev0. (2024). Imbalanced-Learn.org. https://imbalanced-learn.org/dev/references/generated/imblearn.over_sampling.BorderlineSMOTE.html***
+
+ [(toc)](#table-of-contents)
