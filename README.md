@@ -13,7 +13,7 @@
   - [Results \& Findings](#results--findings)
   - [Supporting Material](#supporting-material)
     - [Areas for Further Exploration](#areas-for-further-exploration)
-      - [The Project Structure](#the-project-structure)
+    - [The Project Structure](#the-project-structure)
     - [Setting up the environment](#setting-up-the-environment)
     - [Sources](#sources)
 
@@ -165,7 +165,7 @@ improvements would like fall into one of the following categories:
 - Additional Feature Engineering: Examine other transformations (Box Cox for
   for normality, or perhaps binning certain features)
 
-#### The Project Structure
+### The Project Structure
 
 ```
 Root┐
