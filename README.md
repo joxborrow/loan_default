@@ -1,10 +1,6 @@
 # Capstone Project - Loan Default
 
-## Table of Contents
-
-[Table of Contents](#table-of-contents)
 - [Capstone Project - Loan Default](#capstone-project---loan-default)
-  - [Table of Contents](#table-of-contents)
   - [Problem Statement](#problem-statement)
   - [Model Outcomes or Predictions](#model-outcomes-or-predictions)
   - [Data Acquisition](#data-acquisition)
