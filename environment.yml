@@ -1,4 +1,4 @@
-name: cc_default
+name: loan_default
 channels:
   - conda-forge
 dependencies:
@@ -10,6 +10,7 @@ dependencies:
   - scikit-learn=1.6
   - imbalanced-learn=0.12
   - ipykernel=6.29
+  - xgboost
   - pip
   - pip:
     - great_tables[extra]
