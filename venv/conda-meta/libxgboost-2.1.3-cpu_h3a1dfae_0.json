@@ -1,0 +1,300 @@
+{
+  "build": "cpu_h3a1dfae_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "_openmp_mutex >=4.5",
+    "libgcc >=13",
+    "libstdcxx >=13"
+  ],
+  "extracted_package_dir": "/opt/conda/pkgs/libxgboost-2.1.3-cpu_h3a1dfae_0",
+  "files": [
+    "include/xgboost/base.h",
+    "include/xgboost/c_api.h",
+    "include/xgboost/c_api_error.h",
+    "include/xgboost/c_api_utils.h",
+    "include/xgboost/cache.h",
+    "include/xgboost/collective/result.h",
+    "include/xgboost/collective/socket.h",
+    "include/xgboost/context.h",
+    "include/xgboost/data.h",
+    "include/xgboost/feature_map.h",
+    "include/xgboost/gbm.h",
+    "include/xgboost/global_config.h",
+    "include/xgboost/host_device_vector.h",
+    "include/xgboost/intrusive_ptr.h",
+    "include/xgboost/json.h",
+    "include/xgboost/json_io.h",
+    "include/xgboost/learner.h",
+    "include/xgboost/linalg.h",
+    "include/xgboost/linear_updater.h",
+    "include/xgboost/logging.h",
+    "include/xgboost/metric.h",
+    "include/xgboost/model.h",
+    "include/xgboost/multi_target_tree_model.h",
+    "include/xgboost/objective.h",
+    "include/xgboost/parameter.h",
+    "include/xgboost/predictor.h",
+    "include/xgboost/span.h",
+    "include/xgboost/string_view.h",
+    "include/xgboost/task.h",
+    "include/xgboost/tree_model.h",
+    "include/xgboost/tree_updater.h",
+    "include/xgboost/version_config.h",
+    "lib/libxgboost.so"
+  ],
+  "fn": "libxgboost-2.1.3-cpu_h3a1dfae_0.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/opt/conda/pkgs/libxgboost-2.1.3-cpu_h3a1dfae_0",
+    "type": 1
+  },
+  "md5": "184c045816b27002235aeca204a2bd7c",
+  "name": "libxgboost",
+  "package_tarball_full_path": "/opt/conda/pkgs/libxgboost-2.1.3-cpu_h3a1dfae_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/xgboost/base.h",
+        "path_type": "hardlink",
+        "sha256": "525c4a2ba2f6bd9b17a299978e16f91897d497d6ae0ae5df2335dd059f00d0ce",
+        "sha256_in_prefix": "525c4a2ba2f6bd9b17a299978e16f91897d497d6ae0ae5df2335dd059f00d0ce",
+        "size_in_bytes": 10030
+      },
+      {
+        "_path": "include/xgboost/c_api.h",
+        "path_type": "hardlink",
+        "sha256": "b804850ec6c7a00f8e36f139dfce7fe348fc9ad066ff4cb7ac44a4f5420ec1dd",
+        "sha256_in_prefix": "b804850ec6c7a00f8e36f139dfce7fe348fc9ad066ff4cb7ac44a4f5420ec1dd",
+        "size_in_bytes": 70201
+      },
+      {
+        "_path": "include/xgboost/c_api_error.h",
+        "path_type": "hardlink",
+        "sha256": "dd5365f4a9bf50d711376311108a83fdd94efa0e718cc94f0d20601f7ebab074",
+        "sha256_in_prefix": "dd5365f4a9bf50d711376311108a83fdd94efa0e718cc94f0d20601f7ebab074",
+        "size_in_bytes": 2444
+      },
+      {
+        "_path": "include/xgboost/c_api_utils.h",
+        "path_type": "hardlink",
+        "sha256": "c6cc35598d7bb5d7673323f8d7a10894eba50ea3b18ffd40ed1688ff119f5e79",
+        "sha256_in_prefix": "c6cc35598d7bb5d7673323f8d7a10894eba50ea3b18ffd40ed1688ff119f5e79",
+        "size_in_bytes": 12323
+      },
+      {
+        "_path": "include/xgboost/cache.h",
+        "path_type": "hardlink",
+        "sha256": "7a228ab3c1315ffcce2042a02c41d41bba368fa6bc45efe74d1f71f16f90c0b9",
+        "sha256_in_prefix": "7a228ab3c1315ffcce2042a02c41d41bba368fa6bc45efe74d1f71f16f90c0b9",
+        "size_in_bytes": 6210
+      },
+      {
+        "_path": "include/xgboost/collective/result.h",
+        "path_type": "hardlink",
+        "sha256": "763ed5a4d06d4b85f89104caeedcdb6b800bfaa6cb02a8f7cc064be46644deb1",
+        "sha256_in_prefix": "763ed5a4d06d4b85f89104caeedcdb6b800bfaa6cb02a8f7cc064be46644deb1",
+        "size_in_bytes": 5757
+      },
+      {
+        "_path": "include/xgboost/collective/socket.h",
+        "path_type": "hardlink",
+        "sha256": "bc6a0ffbd0d093e7a296a7ef5253447a650a5ebdf44187e71d93875a8c565292",
+        "sha256_in_prefix": "bc6a0ffbd0d093e7a296a7ef5253447a650a5ebdf44187e71d93875a8c565292",
+        "size_in_bytes": 26007
+      },
+      {
+        "_path": "include/xgboost/context.h",
+        "path_type": "hardlink",
+        "sha256": "31e7327787383c10bcaa7c83bfde0d8bfa3a6048ab30c6004deb297c95731efb",
+        "sha256_in_prefix": "31e7327787383c10bcaa7c83bfde0d8bfa3a6048ab30c6004deb297c95731efb",
+        "size_in_bytes": 10756
+      },
+      {
+        "_path": "include/xgboost/data.h",
+        "path_type": "hardlink",
+        "sha256": "5f00c6c5220cfbc3762f6055936ddd4d26124f3ac4f5daf8fb8ab451b55db798",
+        "sha256_in_prefix": "5f00c6c5220cfbc3762f6055936ddd4d26124f3ac4f5daf8fb8ab451b55db798",
+        "size_in_bytes": 23089
+      },
+      {
+        "_path": "include/xgboost/feature_map.h",
+        "path_type": "hardlink",
+        "sha256": "a0af64ac55fbee1ee0fcae4cc7c59605fc36dbc51128af665ce59e1c09792fff",
+        "sha256_in_prefix": "a0af64ac55fbee1ee0fcae4cc7c59605fc36dbc51128af665ce59e1c09792fff",
+        "size_in_bytes": 2661
+      },
+      {
+        "_path": "include/xgboost/gbm.h",
+        "path_type": "hardlink",
+        "sha256": "73a11180951f56c53bd7f1058a471366ef3d0de1e92c229ece83f323f5745b72",
+        "sha256_in_prefix": "73a11180951f56c53bd7f1058a471366ef3d0de1e92c229ece83f323f5745b72",
+        "size_in_bytes": 8911
+      },
+      {
+        "_path": "include/xgboost/global_config.h",
+        "path_type": "hardlink",
+        "sha256": "b26f850b7f3f1a64db7fb22e88900fa46be29edefee7b0abf16e91fd6e572b43",
+        "sha256_in_prefix": "b26f850b7f3f1a64db7fb22e88900fa46be29edefee7b0abf16e91fd6e572b43",
+        "size_in_bytes": 1027
+      },
+      {
+        "_path": "include/xgboost/host_device_vector.h",
+        "path_type": "hardlink",
+        "sha256": "659c04f6f63252e463a7250f644ad489357c5f622dd54226565ff56b36c61e81",
+        "sha256_in_prefix": "659c04f6f63252e463a7250f644ad489357c5f622dd54226565ff56b36c61e81",
+        "size_in_bytes": 5653
+      },
+      {
+        "_path": "include/xgboost/intrusive_ptr.h",
+        "path_type": "hardlink",
+        "sha256": "a444900dae063268101bc761da39911484ab878c9d6d2a444faaff10a7618d81",
+        "sha256_in_prefix": "a444900dae063268101bc761da39911484ab878c9d6d2a444faaff10a7618d81",
+        "size_in_bytes": 6073
+      },
+      {
+        "_path": "include/xgboost/json.h",
+        "path_type": "hardlink",
+        "sha256": "78b3a80a65a35b4ccb962493e0ce760c1fbe055997aef29ab2e7eb9834b86c93",
+        "sha256_in_prefix": "78b3a80a65a35b4ccb962493e0ce760c1fbe055997aef29ab2e7eb9834b86c93",
+        "size_in_bytes": 19916
+      },
+      {
+        "_path": "include/xgboost/json_io.h",
+        "path_type": "hardlink",
+        "sha256": "822c3d25dd72f9a0f0c5ec19bb0e723c411ba3dbab9c9c5ce08e78af3fc5c73f",
+        "sha256_in_prefix": "822c3d25dd72f9a0f0c5ec19bb0e723c411ba3dbab9c9c5ce08e78af3fc5c73f",
+        "size_in_bytes": 6477
+      },
+      {
+        "_path": "include/xgboost/learner.h",
+        "path_type": "hardlink",
+        "sha256": "d6a2765c1fef7068a1c74e5ed4b7b96bdc9a42e1e15e08af9ad8f89894ae5523",
+        "sha256_in_prefix": "d6a2765c1fef7068a1c74e5ed4b7b96bdc9a42e1e15e08af9ad8f89894ae5523",
+        "size_in_bytes": 12790
+      },
+      {
+        "_path": "include/xgboost/linalg.h",
+        "path_type": "hardlink",
+        "sha256": "e9cfc938c19f8709ea564cd61e7828afdbe1ac63470ea598426d584d3b47143e",
+        "sha256_in_prefix": "e9cfc938c19f8709ea564cd61e7828afdbe1ac63470ea598426d584d3b47143e",
+        "size_in_bytes": 32699
+      },
+      {
+        "_path": "include/xgboost/linear_updater.h",
+        "path_type": "hardlink",
+        "sha256": "281014d85e1328ba99a5d6336da0e24db3fcdb4159ae1ec199d8eee1ff1ab424",
+        "sha256_in_prefix": "281014d85e1328ba99a5d6336da0e24db3fcdb4159ae1ec199d8eee1ff1ab424",
+        "size_in_bytes": 2134
+      },
+      {
+        "_path": "include/xgboost/logging.h",
+        "path_type": "hardlink",
+        "sha256": "3e4b6fc0231a7362e1878bb2012a0e98ace63dedc434c031f2a0c2b87f3f7681",
+        "sha256_in_prefix": "3e4b6fc0231a7362e1878bb2012a0e98ace63dedc434c031f2a0c2b87f3f7681",
+        "size_in_bytes": 4654
+      },
+      {
+        "_path": "include/xgboost/metric.h",
+        "path_type": "hardlink",
+        "sha256": "54fd02a3625f5dda8faaa22d18b657e5944cf56d85a5b38038d30f0a340e3b86",
+        "sha256_in_prefix": "54fd02a3625f5dda8faaa22d18b657e5944cf56d85a5b38038d30f0a340e3b86",
+        "size_in_bytes": 3343
+      },
+      {
+        "_path": "include/xgboost/model.h",
+        "path_type": "hardlink",
+        "sha256": "4b672f4c10c61b3e60a52d683e0d10be7ab1ba099f3c71bf1ca7cd873e29e68e",
+        "sha256_in_prefix": "4b672f4c10c61b3e60a52d683e0d10be7ab1ba099f3c71bf1ca7cd873e29e68e",
+        "size_in_bytes": 1087
+      },
+      {
+        "_path": "include/xgboost/multi_target_tree_model.h",
+        "path_type": "hardlink",
+        "sha256": "8f9f5135ff581e8758c9692ffec3772b9dae66eb3a901884cc450154d2f21b89",
+        "sha256_in_prefix": "8f9f5135ff581e8758c9692ffec3772b9dae66eb3a901884cc450154d2f21b89",
+        "size_in_bytes": 3511
+      },
+      {
+        "_path": "include/xgboost/objective.h",
+        "path_type": "hardlink",
+        "sha256": "42134360979c4c2ed9ea64e2dcd5cfcee1639d8c79ef1ef472b3d6e84694cb8e",
+        "sha256_in_prefix": "42134360979c4c2ed9ea64e2dcd5cfcee1639d8c79ef1ef472b3d6e84694cb8e",
+        "size_in_bytes": 5926
+      },
+      {
+        "_path": "include/xgboost/parameter.h",
+        "path_type": "hardlink",
+        "sha256": "037c1009efbbce3c47cd015221421941510d017001d582d135f846ced3810128",
+        "sha256_in_prefix": "037c1009efbbce3c47cd015221421941510d017001d582d135f846ced3810128",
+        "size_in_bytes": 2919
+      },
+      {
+        "_path": "include/xgboost/predictor.h",
+        "path_type": "hardlink",
+        "sha256": "b660dc64f04b02188bfe5b8ea753f3890a331176f5aeb70a3fa269b949dfaee4",
+        "sha256_in_prefix": "b660dc64f04b02188bfe5b8ea753f3890a331176f5aeb70a3fa269b949dfaee4",
+        "size_in_bytes": 8107
+      },
+      {
+        "_path": "include/xgboost/span.h",
+        "path_type": "hardlink",
+        "sha256": "fe8646589f88d63be38b5a635d776c26877aba65e5fa7177a01203a29ceb5842",
+        "sha256_in_prefix": "fe8646589f88d63be38b5a635d776c26877aba65e5fa7177a01203a29ceb5842",
+        "size_in_bytes": 23594
+      },
+      {
+        "_path": "include/xgboost/string_view.h",
+        "path_type": "hardlink",
+        "sha256": "0aae2e8c5aa442fc6a1fa07536a7ba3c0771ada63ec0a6b4e521507c33e24ae7",
+        "sha256_in_prefix": "0aae2e8c5aa442fc6a1fa07536a7ba3c0771ada63ec0a6b4e521507c33e24ae7",
+        "size_in_bytes": 3787
+      },
+      {
+        "_path": "include/xgboost/task.h",
+        "path_type": "hardlink",
+        "sha256": "1994ca3ac5e15efaa9f75fbdb6e9572341efc30a1d3659cd3959a5053265b910",
+        "sha256_in_prefix": "1994ca3ac5e15efaa9f75fbdb6e9572341efc30a1d3659cd3959a5053265b910",
+        "size_in_bytes": 1379
+      },
+      {
+        "_path": "include/xgboost/tree_model.h",
+        "path_type": "hardlink",
+        "sha256": "6229e4acc0633a32b800b3c39b10c075783529be846c4c2e0af3d25496fb2b14",
+        "sha256_in_prefix": "6229e4acc0633a32b800b3c39b10c075783529be846c4c2e0af3d25496fb2b14",
+        "size_in_bytes": 28949
+      },
+      {
+        "_path": "include/xgboost/tree_updater.h",
+        "path_type": "hardlink",
+        "sha256": "dc8e10700059566aa06c7f02f132e1bd3d7306f5ab5240b47af8d06a758100ad",
+        "sha256_in_prefix": "dc8e10700059566aa06c7f02f132e1bd3d7306f5ab5240b47af8d06a758100ad",
+        "size_in_bytes": 4896
+      },
+      {
+        "_path": "include/xgboost/version_config.h",
+        "path_type": "hardlink",
+        "sha256": "ccd224f40919623d2945799626a73aabaa4031b4e801dab4ea75e7dbb10ce454",
+        "sha256_in_prefix": "ccd224f40919623d2945799626a73aabaa4031b4e801dab4ea75e7dbb10ce454",
+        "size_in_bytes": 288
+      },
+      {
+        "_path": "lib/libxgboost.so",
+        "path_type": "hardlink",
+        "sha256": "de771146efc7d5d16169ceda9b99a1eecdc957b86bb89aa0eecdbfa6b0bef2c8",
+        "sha256_in_prefix": "de771146efc7d5d16169ceda9b99a1eecdc957b86bb89aa0eecdbfa6b0bef2c8",
+        "size_in_bytes": 14469432
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "47e308fbf33627ddfb5a63afbb98dc5a1d017c937142353751bdf669d8a6fc04",
+  "size": 3200738,
+  "subdir": "linux-64",
+  "timestamp": 1733180316000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libxgboost-2.1.3-cpu_h3a1dfae_0.conda",
+  "version": "2.1.3"
+}

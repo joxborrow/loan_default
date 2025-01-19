@@ -1,0 +1,29 @@
+{
+  "build": "cpu_0",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/opt/conda/pkgs/_py-xgboost-mutex-2.0-cpu_0",
+  "files": [],
+  "fn": "_py-xgboost-mutex-2.0-cpu_0.tar.bz2",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/opt/conda/pkgs/_py-xgboost-mutex-2.0-cpu_0",
+    "type": 1
+  },
+  "md5": "23b8f98a355030331f40d0245492f715",
+  "name": "_py-xgboost-mutex",
+  "package_tarball_full_path": "/opt/conda/pkgs/_py-xgboost-mutex-2.0-cpu_0.tar.bz2",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "504b46c85d81269b24e7b22309064886cfc873955e77daf0eb794d8e7ec8cc06",
+  "size": 7938,
+  "subdir": "linux-64",
+  "timestamp": 1538887428000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/_py-xgboost-mutex-2.0-cpu_0.tar.bz2",
+  "version": "2.0"
+}

@@ -1,0 +1,14 @@
+prefix=/workspaces/loan_default/venv
+exec_prefix=/workspaces/loan_default/venv
+libdir=/workspaces/loan_default/venv/lib
+includedir=/workspaces/loan_default/venv/include
+
+Name: FreeType 2
+URL: https://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 24.3.18
+Requires: 
+Requires.private: zlib, libpng
+Libs: -L/workspaces/loan_default/venv/lib -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

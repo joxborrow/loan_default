@@ -1,0 +1,11 @@
+prefix=/workspaces/loan_default/venv
+exec_prefix=/workspaces/loan_default/venv
+libdir=/workspaces/loan_default/venv/lib
+includedir=/workspaces/loan_default/venv/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.38.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid
