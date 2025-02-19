@@ -9,6 +9,7 @@
   - [Model Evaluation](#model-evaluation)
   - [Results \& Findings](#results--findings)
   - [Supporting Material](#supporting-material)
+    - [Feature Importance](#feature-importance)
     - [Areas for Further Exploration](#areas-for-further-exploration)
     - [The Project Structure](#the-project-structure)
     - [Setting up the environment](#setting-up-the-environment)
