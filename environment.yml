@@ -12,6 +12,7 @@ dependencies:
   - ipykernel=6.29
   - xgboost
   - shap
+  - scikit-optimize
   - pip
   - pip:
     - great_tables[extra]
